@@ -9,7 +9,7 @@
           "ld4p:RT:bf2:InstanceTitle",
           "ld4p:RT:bf2:Title:VarTitle",
           "ld4p:RT:bf2:ParallelTitle",
-          "ld4p:RT:bf2:Title:TranscribedTitle"
+          "UChicago:RT:bf2:TranscribedTitle"
         ],
         "useValuesFrom": [],
         "defaults": []
