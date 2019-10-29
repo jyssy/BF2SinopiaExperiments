@@ -144,12 +144,7 @@
                 "ld4p:RT:bf2:Note"
               ],
               "useValuesFrom": [],
-              "defaults": [
-                {
-                  "defaultURI": "",
-                  "defaultLiteral": ""
-                }
-              ]
+              "defaults": []
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/note",
             "propertyLabel": "Notes about the Work",
@@ -1072,7 +1067,7 @@
       }
     ],
     "author": "LD4P mod by jlambertson (lambertson@uchicago.edu) UChicago",
-    "date": "2019-10-25",
+    "date": "2019-10-29",
     "description": "Work, Instance, Item for Monographs, based on LC profile as of Aug-07-2019",
     "id": "UChicago:profile:bf2:Monograph",
     "title": "UChicago BIBFRAME 2.0 Monograph",
@@ -1080,4 +1075,3 @@
     "remark": "Test profile (many iterations)"
   }
 }
-
