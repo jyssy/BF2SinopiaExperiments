@@ -9,7 +9,7 @@
           "ld4p:RT:bf2:InstanceTitle",
           "ld4p:RT:bf2:Title:VarTitle",
           "ld4p:RT:bf2:ParallelTitle",
-          "UChicago:RT:bf2:TranscribedTitle"
+          "ld4p:RT:bflc:TranscribedTitle"
         ],
         "useValuesFrom": [],
         "defaults": []
@@ -340,9 +340,7 @@
       "propertyURI": "http://id.loc.gov/ontologies/bibframe/instanceOf",
       "type": "resource",
       "valueConstraint": {
-        "valueTemplateRefs": [
-          "ld4p:RT:bf2:Monograph:Work"
-        ],
+        "valueTemplateRefs": [],
         "useValuesFrom": [],
         "defaults": []
       },
