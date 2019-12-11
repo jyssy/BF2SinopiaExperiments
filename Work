@@ -371,9 +371,7 @@
       "repeatable": "true",
       "type": "resource",
       "valueConstraint": {
-        "valueTemplateRefs": [
-          "ld4p:RT:bf2:Monograph:Instance"
-        ],
+        "valueTemplateRefs": [],
         "useValuesFrom": [],
         "defaults": []
       },
