@@ -256,7 +256,7 @@
             "type": "resource",
             "valueConstraint": {
               "valueTemplateRefs": [
-                "sinopia:resourceTemplate:bf2:Language2"
+                "ld4p:RT:bf2:Language2"
               ],
               "valueDataType": {
                 "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"
@@ -372,7 +372,9 @@
             "repeatable": "true",
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": [],
+              "valueTemplateRefs": [
+                "ld4p:RT:bf2:Monograph:Instance:Un-nested"
+              ],
               "useValuesFrom": [],
               "defaults": []
             },
@@ -386,7 +388,7 @@
         "resourceLabel": "UChicago Monograph Work (BIBFRAME)",
         "remark": "based on LC template ld4p:RT:bf2:Monograph:Work",
         "author": "LD4P mod by jlambertson (lambertson@uchicago)",
-        "date": "2020-01-17",
+        "date": "2020-01-22",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
       },
       {
@@ -696,20 +698,6 @@
             "resourceTemplates": []
           },
           {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "resource",
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [],
-              "defaults": [],
-              "valueDataType": {}
-            },
-            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasItem",
-            "propertyLabel": "Has Item",
-            "resourceTemplates": []
-          },
-          {
             "mandatory": "true",
             "repeatable": "true",
             "type": "resource",
@@ -737,13 +725,27 @@
             "mandatory": "false",
             "repeatable": "true",
             "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "resource",
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": [],
+              "valueDataType": {}
+            },
+            "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasItem",
+            "propertyLabel": "Has Item",
+            "resourceTemplates": []
           }
         ],
         "resourceLabel": "UChicago Monograph Instance (BIBFRAME)",
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/Instance",
         "remark": "based on LC template ld4p:RT:bf2:Monograph:Instance",
         "author": "LD4P mod by jlambertson (lambertson@uchicago.edu)",
-        "date": "2020-01-17",
+        "date": "2020-01-22",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
       },
       {
@@ -764,7 +766,7 @@
               "defaults": []
             },
             "mandatory": "false",
-            "repeatable": "false",
+            "repeatable": "true",
             "resourceTemplates": []
           },
           {
@@ -919,7 +921,7 @@
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
         "remark": "based on LC template ld4p:RT:bf2:Monograph:Item",
         "author": "LD4P mod by jlambertson (lambertson@uchicago.edu)",
-        "date": "2020-01-17",
+        "date": "2020-01-22",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
       },
       {
@@ -988,7 +990,7 @@
         "resourceLabel": "UChicago Related Manifestation",
         "remark": "based on LC template ld4p:RT:bf2:Monograph:RelatedInstance",
         "author": "LD4P mod by jlambertson (lambertson@uchicago.edu)",
-        "date": "2020-01-17",
+        "date": "2020-01-22",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
       },
       {
@@ -1056,12 +1058,12 @@
         "resourceLabel": "UChicago Dissertation",
         "remark": "based on LC template ld4p:RT:bf2:Monograph:Dissertation",
         "author": "LD4P mod by jlambertson (lambertson@uchicago.edu)",
-        "date": "2020-01-17",
+        "date": "2020-01-22",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
       }
     ],
     "author": "LD4P mod by jlambertson (lambertson@uchicago.edu) UChicago",
-    "date": "2020-01-17",
+    "date": "2020-01-22",
     "description": "Work, Instance, Item for Monographs, based on LC profile as of 2019",
     "id": "UChicago:profile:bf2:Monograph",
     "title": "UChicago BIBFRAME 2.0 Monograph",
