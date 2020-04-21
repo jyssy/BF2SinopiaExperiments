@@ -126,6 +126,22 @@
     {
       "mandatory": "false",
       "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "Yale:RT:BF2:Agents:Contribution:Item"
+        ],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "propertyLabel": "Contributor to Item",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/contribution",
+      "remark": "Used with Work, Instance or Item"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
       "type": "literal",
       "remark": "http://access.rdatoolkit.org/2.18.html",
       "propertyLabel": "Custodial History of Item",
@@ -165,12 +181,28 @@
       },
       "propertyURI": "http://id.loc.gov/ontologies/bibframe/itemOf",
       "propertyLabel": "Holding for (Item of)"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "ld4p:RT:bf2:AdminMetadata"
+        ],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "propertyLabel": "Administrative Metadata for Item (s)",
+      "remark": "Used for Works, Instances, or Works"
     }
   ],
   "resourceLabel": "UChicago Monograph Item (BIBFRAME)",
   "resourceURI": "http://id.loc.gov/ontologies/bibframe/Item",
   "remark": "based on LC template ld4p:RT:bf2:Monograph:Item",
   "author": "LD4P mod by jlambertson (lambertson@uchicago.edu)",
-  "date": "2020-03-04",
+  "date": "2020-04-21",
   "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
 }

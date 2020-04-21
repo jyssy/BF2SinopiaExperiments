@@ -89,6 +89,22 @@
       "mandatory": "false",
       "repeatable": "true",
       "type": "lookup",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [
+          "urn:ld4p:sinopia:bibframe:work"
+        ],
+        "defaults": []
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasSeries",
+      "propertyLabel": "In series",
+      "remark": "URI for series as a work; lookup in Sinopia or use URI from another source"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
       "valueConstraint": {
         "valueTemplateRefs": [],
         "useValuesFrom": [
@@ -374,6 +390,22 @@
       "propertyURI": "http://id.loc.gov/ontologies/bibframe/hasInstance",
       "propertyLabel": "Has BIBFRAME Instance",
       "resourceTemplates": []
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [
+          "ld4p:RT:bf2:AdminMetadata:BFDB"
+        ],
+        "useValuesFrom": [],
+        "defaults": []
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "propertyLabel": "Administrative metadata",
+      "remark": ""
     }
   ],
   "id": "UChicago:RT:bf2:Monograph:Work",
@@ -381,6 +413,6 @@
   "resourceLabel": "UChicago Monograph Work (BIBFRAME)",
   "remark": "based on LC template ld4p:RT:bf2:Monograph:Work",
   "author": "LD4P mod by jlambertson (lambertson@uchicago)",
-  "date": "2020-03-04",
+  "date": "2020-04-21",
   "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json"
 }
