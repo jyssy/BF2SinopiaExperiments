@@ -1,0 +1,181 @@
+{
+  "propertyTemplates": [
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "literal",
+      "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
+      "propertyLabel": "Your cataloger ID (CNetID)",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": []
+      }
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "false",
+      "type": "literal",
+      "valueConstraint": {
+        "valueDataType": {
+          "dataTypeURI": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "useValuesFrom": [],
+        "valueTemplateRefs": [],
+        "defaults": []
+      },
+      "propertyLabel": "Creation date",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/creationDate",
+      "resourceTemplates": []
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "false",
+      "type": "literal",
+      "valueConstraint": {
+        "valueDataType": {
+          "dataTypeURI": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "useValuesFrom": [],
+        "valueTemplateRefs": [],
+        "defaults": []
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/changeDate",
+      "propertyLabel": "Change date",
+      "resourceTemplates": []
+    },
+    {
+      "mandatory": "true",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": [
+          {
+            "defaultURI": "http://id.loc.gov/authorities/names/n79139284",
+            "defaultLiteral": "TxCM"
+          }
+        ],
+        "valueDataType": {}
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
+      "propertyLabel": "Assigning Agency",
+      "remark": "Add the URI from Library of Congress' Name Authority File"
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "lookup",
+      "valueConstraint": {
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/marcauthen"
+        ],
+        "valueDataType": {
+          "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionAuthentication"
+        },
+        "valueTemplateRefs": [],
+        "defaults": []
+      },
+      "propertyLabel": "Description authentication",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionAuthentication",
+      "resourceTemplates": []
+    },
+    {
+      "mandatory": "true",
+      "repeatable": "true",
+      "type": "lookup",
+      "valueConstraint": {
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/descriptionConventions"
+        ],
+        "valueDataType": {
+          "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/DescriptionConventions"
+        },
+        "defaults": [
+          {
+            "defaultURI": "http://id.loc.gov/vocabulary/descriptionConventions/rda",
+            "defaultLiteral": "Resource Description and Access"
+          }
+        ],
+        "valueTemplateRefs": []
+      },
+      "propertyLabel": "Description conventions",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "resourceTemplates": []
+    },
+    {
+      "mandatory": "true",
+      "repeatable": "false",
+      "type": "lookup",
+      "valueConstraint": {
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/languages"
+        ],
+        "valueDataType": {
+          "dataTypeURI": "http://id.loc.gov/ontologies/bibframe/Language"
+        },
+        "defaults": [
+          {
+            "defaultURI": "http://id.loc.gov/vocabulary/languages/eng",
+            "defaultLiteral": "English"
+          }
+        ],
+        "valueTemplateRefs": []
+      },
+      "propertyLabel": "Description language",
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "resourceTemplates": []
+    },
+    {
+      "mandatory": "false",
+      "repeatable": "true",
+      "type": "resource",
+      "resourceTemplates": [],
+      "valueConstraint": {
+        "valueTemplateRefs": [],
+        "useValuesFrom": [],
+        "defaults": [
+          {
+            "defaultURI": "http://id.loc.gov/authorities/names/n79139284",
+            "defaultLiteral": "ICU"
+          }
+        ],
+        "valueDataType": {}
+      },
+      "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionModifier",
+      "propertyLabel": "Description Modifier",
+      "remark": "Add the URI from Library of Congress' Name Authority File"
+    },
+    {
+      "mandatory": "true",
+      "repeatable": "false",
+      "type": "lookup",
+      "valueConstraint": {
+        "useValuesFrom": [
+          "https://id.loc.gov/vocabulary/menclvl"
+        ],
+        "valueDataType": {},
+        "valueTemplateRefs": [],
+        "defaults": [
+          {
+            "defaultURI": "http://id.loc.gov/vocabulary/menclvl/f",
+            "defaultLiteral": "Full"
+          }
+        ]
+      },
+      "propertyLabel": "Encoding level",
+      "propertyURI": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "resourceTemplates": []
+    }
+  ],
+  "id": "UChicago_RT_BF2_AdminMetadata",
+  "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+  "resourceLabel": "UChicago Administrative Metadata",
+  "author": "Jesse Lambertson (mod of TAMU admin data) lambertson@uchicago",
+  "date": "2020-04-22",
+  "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
+  "remark": "Can be used with Works, Instances, and Items"
+}
