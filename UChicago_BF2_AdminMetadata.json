@@ -66,7 +66,7 @@
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/source",
             "propertyLabel": "Assigning Agency",
-            "remark": "Add the URI from Code List for Cultural Heritage Organizations"
+            "remark": "Add the URI from Library of Congress' Name Authority File"
           },
           {
             "mandatory": "false",
@@ -150,7 +150,7 @@
             },
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/descriptionModifier",
             "propertyLabel": "Description Modifier",
-            "remark": "Add the URI from Code List for Cultural Heritage Organizations"
+            "remark": "Add the URI from Library of Congress' Name Authority File"
           },
           {
             "mandatory": "true",
