@@ -8,7 +8,7 @@
             "repeatable": "true",
             "type": "literal",
             "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
-            "propertyLabel": "Your cataloger ID (NetID)",
+            "propertyLabel": "Your cataloger ID (CNetID)",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [],
@@ -143,7 +143,7 @@
               "defaults": [
                 {
                   "defaultURI": "http://id.loc.gov/authorities/names/n79139284",
-                  "defaultLiteral": "TxCM"
+                  "defaultLiteral": "ICU"
                 }
               ],
               "valueDataType": {}
