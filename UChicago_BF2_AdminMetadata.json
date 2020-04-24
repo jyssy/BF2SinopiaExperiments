@@ -8,7 +8,7 @@
             "repeatable": "true",
             "type": "literal",
             "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
-            "propertyLabel": "Your cataloger ID (CNetID)",
+            "propertyLabel": "Your cataloger ID (CNetID) for Creation",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [],
@@ -31,6 +31,19 @@
             "propertyLabel": "Creation date",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/creationDate",
             "resourceTemplates": []
+          },
+          {
+            "mandatory": "false",
+            "repeatable": "true",
+            "type": "literal",
+            "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
+            "propertyLabel": "Your cataloger ID (CNetID) for Changes",
+            "resourceTemplates": [],
+            "valueConstraint": {
+              "valueTemplateRefs": [],
+              "useValuesFrom": [],
+              "defaults": []
+            }
           },
           {
             "mandatory": "false",
@@ -59,7 +72,7 @@
               "defaults": [
                 {
                   "defaultURI": "http://id.loc.gov/authorities/names/n79139284",
-                  "defaultLiteral": "TxCM"
+                  "defaultLiteral": "ICU"
                 }
               ],
               "valueDataType": {}
@@ -178,7 +191,7 @@
         "resourceURI": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
         "resourceLabel": "UChicago Administrative Metadata",
         "author": "Jesse Lambertson (mod of TAMU admin data) lambertson@uchicago",
-        "date": "2020-04-22",
+        "date": "2020-04-24",
         "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/resource-template.json",
         "remark": "Can be used with Works, Instances, and Items"
       }
@@ -188,7 +201,7 @@
     "description": "UChicago AdminMetadata",
     "author": "Jesse Lambertson (mod of TAMU admin data) lambertson@uchicago",
     "schema": "https://ld4p.github.io/sinopia/schemas/0.0.9/profile.json",
-    "date": "2020-04-22",
+    "date": "2020-04-24",
     "remark": "Can be used with Works, Instances, and Items"
   }
 }
