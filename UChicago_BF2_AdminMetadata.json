@@ -8,7 +8,7 @@
             "repeatable": "true",
             "type": "literal",
             "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
-            "propertyLabel": "Your cataloger ID (CNetID) for Creation",
+            "propertyLabel": "Cataloger ID (CNetID) for Creation",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [],
@@ -31,19 +31,6 @@
             "propertyLabel": "Creation date",
             "propertyURI": "http://id.loc.gov/ontologies/bibframe/creationDate",
             "resourceTemplates": []
-          },
-          {
-            "mandatory": "false",
-            "repeatable": "true",
-            "type": "literal",
-            "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
-            "propertyLabel": "Your cataloger ID (CNetID) for Changes",
-            "resourceTemplates": [],
-            "valueConstraint": {
-              "valueTemplateRefs": [],
-              "useValuesFrom": [],
-              "defaults": []
-            }
           },
           {
             "mandatory": "false",
