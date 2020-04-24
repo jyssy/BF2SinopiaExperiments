@@ -5,7 +5,7 @@
       "repeatable": "true",
       "type": "literal",
       "propertyURI": "http://id.loc.gov/ontologies/bflc/catalogerId",
-      "propertyLabel": "Cataloger ID (CNetID) for Creation",
+      "propertyLabel": "Cataloger IDs (CNetID)",
       "resourceTemplates": [],
       "valueConstraint": {
         "valueTemplateRefs": [],
